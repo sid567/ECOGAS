@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecogas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div>
+            <img id="logo" src="ecogaslogo.png" alt="">
+            </div>
+            ECOGas
+            
+        </div>
+        <div id="top">
+            <img id="icon" src="menu.png" alt="no image">
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+        </div>
+        
+    </header>
+
+    
+    <div id="sign">
+        <a href="sign_up.html">
+            SignIn
+        </a>
+    </div>
+
+
+    <div>
+    <div class="sec2">
+    <div>
+        <img src="cylinder.png" alt="no image">
+    </div>
+    <div id="sec2">
+        <div id="sec21">
+        <h1>Convinient Gas Booking</h1>
+        <section id="tempo">Welcome to ECOGas, your reliable online gas booking system providing easy access to
+             industrial gas supplies for your needs. Experience hassle-free gas ordering at your fingertips.</section>
+             </div>
+    </div>
+    </div>
+    </div>
+
+    <section>
+        <h4>Services</h4>
+    </section>
+
+    <div class="sec2">
+        <div>
+           <img src="cylinder2.jpeg" alt="">
+        </div>
+        <div id="sec3">
+                <div id="sec31">
+                    <h3>BOOK A CYLINDER</h3>
+                    <div id="bookbutton"><a id="booklink" href="book.html">book</a></div>
+                </div>
+                <div id="sec31">
+                    <h3>REQUEST FOR MAINTAINANCE</h3>
+                    <div id="bookbutton"><a id="booklink" href="contact.html">book</a></div>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="sec4">
+        <div id="sec4">
+            <h5> Our Services</h5>
+            <p>We offer a range of industrial gas solutions tailored to meet your specific requirements. From prompt deliveries to quality assurance, we ensure a seamless gas supply experience for your operations.</p>
+
+        </div>
+
+        <div id="sec4">
+            <h6>Quality Assurance</h6>
+            <p>We prioritize quality in every gas supply, guaranteeing that you receive industrial-grade gases meeting the highest standards. Count on us for consistent and top-notch gas products.</p>
+            <h6>Customer Support</h6>
+            <p>Our dedicated customer support team is always available to assist you with any queries or concerns. We are committed to providing exceptional service and addressing your needs promptly.</p>
+
+        </div>
+
+    </div>
+
+    <footer>ALL RIGHTS RESERVED</footer>
+
+    <script type="module">
+    document.addEventListener("DOMContentLoaded", () => {
+        const isRegistered = localStorage.getItem("isRegistered");
+    
+        const signInElement = document.getElementById("sign");
+    
+        if (isRegistered === "true") {
+            // Hide "Sign In" and show "Profile"
+            signInElement.style.display = "none";
+        } else {
+            // Show "Sign In" and hide "Profile"
+            signInElement.style.display = "block";
+        }
+    });</script>
+</body>
+</html>
